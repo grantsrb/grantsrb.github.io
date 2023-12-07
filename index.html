@@ -4,27 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Satchel's Project Blog</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css?v1.0.1">
 </head>
 <body>
     <div class="container"></div>
         <header>
-            <h1>Welcome to Project Purgatory</h1>
+            <h1>Satchel Grant</h1>
+            <img src="https://psychology.stanford.edu/sites/psychology/files/styles/hs_medium_square_360x360/public/media/capx/satchel-grant-square1612909100493.jpg?h=b4e301e9&itok=nw0Sg_aE" alt="">
             <nav>
                 <ul>
                     <li><a href="#about">About</a></li>
                     <li><a href="#projects">Projects</a></li>
-                    <li><a href="#papers">Academic Papers</a></li>
+                    <li><a href="#papers">Papers</a></li>
                 </ul>
             </nav>
         </header>
         <main>
             <section id="about">
-                <h2>About Me and the Blog</h2>
+                <h2>About Me</h2>
                 <p>
-                    I'm currently a 3rd year PhD student in Jay McClelland's
-                    lab. I study numeric cognition and spatial reasoning
-                    using multimodal and embodied neural network models.
+                    I'm currently a 3rd year PhD candidate at Stanford studying
+                    cognition in Jay McClelland's lab.
+                    I study numeric cognition and spatial reasoning
+                    using multimodal and embodied connectionist models.
                     My interests lie at the intersection of Psychology,
                     Neuroscience, and Artificial Intelligence, generally in
                     the broad, nebulously defined pursuit of understanding
@@ -32,30 +34,234 @@
                 </p>
                 <p>
                     This blog is mainly to showcase my projects that
-                    were promising or interesting but not worth publishing.
-                    I named this blog, "Project Purgatory" because these
-                    projects usually haven't made it to publishable heaven,
-                    but they weren't bad enough to be scrapped in project hell.
-                    Some of the projects find themselves listed here
-                    because I'm currently developing them further, or I
-                    couldn't find the time to pursue them further, or
-                    someone else beat me to the punch.
+                    are promising or interesting but are not worth
+                    publishing.These projects may find themselves listed
+                    here because they're at a reasonable state but I want
+                    to develop them further; I can't find the time to
+                    pursue them further and don't expect to ever find
+                    the time; or someone else beat me to the punch.
                     For each project, I'll link to the repo/writeup
                     and describe what I'm doing to make it better, or
                     why I won't be pursuing it further.
                 </p>
+                <p>
+                    One final note, the date near the beginning of each
+                    entry refers to the date that the writeup was pushed
+                    to github or where ever it's hosted. This is not the
+                    date that the blog entry was made!
+                </p>
             </section>
+
             <section id="projects">
                 <h2>Unpublished Projects</h2>
-                <!-- Add your project links here -->
-                <!-- <p><a href="#">Project 1</a></p>
-                <p><a href="#">Project 2</a></p> -->
+
+                <div class="entry">
+                    <h3 class="entry-header"><a href="https://github.com/grantsrb/cogmtc/blob/master/Grant-Dec2023-BidirectionalInfluencesOfGroundedQuantificationAndLanguageInAcquiringNumericalCognitiveAbilities.pdf">
+                        Bidirectional Influences of Grounded Quantification and Language
+                        in Acquiring Numerical Cognitive Abilities    
+                    </a></h3>
+
+                    <strong>Date Released: Dec 6, 2023 <br> </strong> 
+
+                    <p class="abstract">
+                    <strong><em>Abstract:</em></strong> 
+                    We explore the role of language in cognition within the domain of number,
+                    revisiting a debate on the role of exact count words in numeric matching
+                    tasks. To address these issues, we introduce a virtual environment to simulate
+                    exact equivalence tasks like those used to study the numerical abilities
+                    of members of the Pirah˜a tribe, who lack exact number words, in previous
+                    works. We use recurrent neural networks to model visuospatially grounded
+                    counting behavior with and without the influence of exact number words.
+                    We find that it is possible for networks to learn to perform exact numeric
+                    matching tasks correctly up to non-trivial quantities with and without the
+                    use of exact number words. Importantly, however, networks with limited
+                    counting experience with and without language capture the approximate behavior
+                    exhibited by adult members of the Pirah˜a and young children learning
+                    to count in cultures with number words. Our networks also exhibit aspects of
+                    human numerical cognition purely through learning to solve the tasks: a flat
+                    coefficient of variation and a compressed mental number representation. We
+                    explore the causal influences of language and actions, showing that number
+                    words decrease the amount of experience needed to learn the numeric matching
+                    tasks, and learning the task actions reduces experience needed to learn
+                    number words. We use these results as a proof of principle for expanding
+                    our understanding of number cognition, and we suggest refinement to our
+                    collective understanding of the interactions between language and thought.
+                    </p>
+
+                    <p class="reasonwhy">
+                    This is ongoing work that will soon be submitted to Cognition.
+                    </p>
+                </div>
+
+
+
+                <div class="entry">
+                    <h3 class="entry-header"><a href="https://github.com/grantsrb/ctx_cmp/blob/master/Grant-March2023-LeveragingLLMsForContextCompression.pdf">
+                    Leveraging Large Language Models for Context Compression
+                    </a></h3>
+                    <strong>Date Released: May 31, 2023 <br> </strong> 
+
+                    <p class="abstract">
+                    <strong><em>Abstract:</em></strong> Large Language Models (LLMs) have demonstrated
+                    remarkable performance on a wide range of
+                    language modeling tasks. LLMs have also demonstrated an ability to learn new tasks
+                    from clever prompt sequences, without the need for gradient updates. The length of
+                    an LLM's context window, however, has quadratic computational complexity, making
+                    large context windows prohibitively expensive. Furthermore, a problem with LLMs as
+                    models of cognition is their perfect memory for tokens within their context window,
+                    and their non-existant memory for things outside of their context window in the absence
+                    of weight updates. To address the challenges of large context windows, we introduce a
+                    technique that uses pretrained LLMs to create compressed, representations of
+                    sub-sequences within the context. We introduce a new token type that can be trained to
+                    compress a history of tokens at inference without additional gradient updates after training.
+                    These tokens serve to increase the context size while taking a step toward aligning LLMs
+                    with human stimulus abstraction. We use this technique to augment the open source Bloom
+                    models, and we show that the compressed representations can recover ~80\% of the
+                    performance of the LLMs using the full context.
+                    </p>
+
+                    <p class="reasonwhy">
+                    I never submitted this to any conferences because it ended up being
+                    very similar to Jesse Mu's work,
+                    <a href="https://arxiv.org/abs/2304.08467">Learning to Compress Prompts with Gist Tokens</a>.
+                    Then Alexis Chevalier et. al. published
+                    <a href="https://arxiv.org/abs/2305.14788">Adapting Language Models to Compress Contexts</a>
+                    that does the exact same idea. Chevalier et. al. managed
+                    to scale things up very nicely, and had excellent results.
+                    </p>
+
+                </div>
+
+
+
+                <div class="entry">
+                    <h3 class="entry-header"><a href="http://cs231n.stanford.edu/reports/2022/pdfs/107.pdf">
+                    Spontaneous Decomposition from Grouped Network Pathways
+                    </a></h3>
+                    <strong>Date Submitted: Dec, 2022 (hosted online Jul 1, 2022) <br> </strong> 
+
+                    <p class="abstract">
+                    <strong><em>Abstract:</em></strong> There have been many recent
+                    breakthroughs in self-
+                    supervised learning (SSL), i.e. unsupervised techniques
+                    used to obtain general purpose image features for down-
+                    stream tasks. However, these methods often require large
+                    amounts of computational resources, and much is still unknown
+                    about how architectural choices affect the quality
+                    of self-supervised learned representations. There is still a
+                    lack of understanding of why compositional features spontaneously
+                    arise in previous self-supervised publications. In
+                    this work, we propose a class of models that is reminiscent of an
+                    ensemble. We show how this class of models can
+                    greatly reduce the number of parameters needed for learning
+                    robust representations in a self-supervised setting. Additionally,
+                    we show that sparsely connected network pathways spontaneously
+                    create decomposed representations.
+                    </p>
+
+                    <p class="reasonwhy">
+                    In this work, we imposed network pathway grouping on a simple CNN architecture
+                    and found that different features would get learned by different isolated subpathways
+                    in the network. We also showed that this grouped architecture had performance benefits
+                    over vanilla variants. We also made a poster <a href="http://cs231n.stanford.edu/reports/2022/pdfs/107p.pdf">here.</a>
+                    I think this work was great, but we struggled with our message and audience. It was
+                    a project for Stanford's <a href="http://cs231n.stanford.edu/">Computer Vision</a> course
+                    so we attempted to frame the project as an architectural contribution, validating the
+                    representations on a performance benchmark (CIFAR10 image classification). I think the
+                    project is more interesting, however, for its qualtitative findings about learned
+                    representations. I still think this work has promise, but I'm not familiar with the
+                    greater literature. And I think there has been some good theory work since we finished
+                    this writeup.
+                    </p>
+
+                </div>
+
+
+
+                <div class="entry">
+                    <h3 class="entry-header"><a href="https://github.com/grantsrb/blotching/blob/master/Grant-2023-ChainOfShortcuts.pdf">
+                        Improving Chain of Thought with Chain of Shortcuts
+                    </a></h3>
+
+                    <strong>Date Released: Dec 6, 2023 <br> </strong> 
+
+                    <p class="abstract">
+                    <strong><em>Abstract:</em></strong> 
+                    Large Language Models (LLMs) have demonstrated remarkable language modeling
+                    and sequence modeling capabilities with capabilities like In-Context Learning
+                    (ICL) and Chain of Thought (CoT) reasoning, akin to human working memory and
+                    reasoning. Drawing inspiration from dual process theory in human cognition, we
+                    propose a novel training technique called Chain of Shortcuts (CoS) that bridges
+                    the gap between LLMs’ System 1 (automatic) and System 2 (deliberate) modes.
+                    CoS enables LLMs to compress reasoning trajectories, encouraging associations
+                    between earlier and later steps in problem-solving, resulting in shorter, more
+                    flexible solutions. We demonstrate that CoS-trained language models maintain or
+                    outperform baseline models while generating distilled problem solutions, enhancing
+                    stability during training, and excelling in high-temperature environments. CoS’s
+                    effectiveness increases with the number of transformer layers until saturation. Our
+                    work not only contributes to mathematical transformers but also offers insights
+                    into human dual process theory, paving the way for more efficient and robust AI
+                    systems.
+                    </p>
+
+                    <p class="reasonwhy">
+                    Overall, this project's direction no longer seems promising as a longterm focus 😢
+                    Another paper called <a href="https://arxiv.org/abs/2309.03241">GPT Can Solve Mathematical Problems Without a Calculator</a>
+                    came out in September that essentially does what we were moving towards in terms of a Computer Science contribution.
+                    And the cognitive focus of our work is probably too abstract to be much of a contribution.
+                    This writeup was intended to be a NeurIPS workshop submission, but due to the reasons mentioned
+                    above, combined with a misinterpretation of the workshop deadline (12AM vs 12PM 😅), it was never
+                    submitted and probably never will be.
+                    </p>
+                </div>
+
+                    
             </section>
             <section id="papers">
                 <h2>Published Work</h2>
-                <!-- Add your academic paper links here -->
-                <!-- <p><a href="#">Paper 1</a></p>
-                <p><a href="#">Paper 2</a></p> -->
+                <div class="entry">
+                    <h3 class="entry-header"><a href="https://www.sciencedirect.com/science/article/pii/S0896627323004671">
+                    Interpreting the retinal neural code for natural scenes: From computations to neurons 
+                    </a></h3>
+                    <strong>Date Published: Sept. 6, 2023</strong> 
+                    <p class="authors"><em>
+                        Niru Maheswaranathan<sup>*</sup>, Lane T McIntosh<sup>*</sup>, Hidenori Tanaka<sup>*</sup>, Satchel Grant<sup>*</sup>,
+                        David B Kastner, Joshua B Melander, Aran Nayebi, Luke E Brezovec,
+                        Julia H Wang, Surya Ganguli, Stephen A Baccus
+                    </em></p>
+
+                    <p class="abstract">
+                    <strong><em>Abstract:</em></strong>
+                    Understanding the circuit mechanisms of the visual code for
+                    natural scenes is a central goal of sensory neuroscience. We show
+                    that a three-layer network model predicts retinal natural scene
+                    responses with an accuracy nearing experimental limits. The
+                    model’s internal structure is interpretable, as interneurons
+                    recorded separately and not modeled directly are highly
+                    correlated with model interneurons. Models fitted only to
+                    natural scenes reproduce a diverse set of phenomena related
+                    to motion encoding, adaptation, and predictive coding,
+                    establishing their ethological relevance to natural visual
+                    computation. A new approach decomposes the computations of
+                    model ganglion cells into the contributions of model
+                    interneurons, allowing automatic generation of new hypotheses
+                    for how interneurons with different spatiotemporal responses
+                    are combined to generate retinal computations, including
+                    predictive phenomena currently lacking an explanation.
+                    Our results demonstrate a unified and general approach to
+                    study the circuit mechanisms of ethological retinal
+                    computations under natural visual scenes.
+                    </p>
+
+                    <p class="reasonwhy">
+                    I love this work because it first does a beautiful demonstration
+                    of how to establish an isomorphism between biological and artificial
+                    neural networks, and then it goes a step further to show how
+                    you can use that sort of model for interpreting the real biological
+                    neural code.
+                    </p>
+
+                </div>
             </section>
         </main>
         <footer>

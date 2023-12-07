@@ -8,11 +8,8 @@ body {
 }
 
 .container {
-    max-width: 1200px; /* Sets maximum width */
-    margin: auto; /* Centers the content */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
     background: #fff; /* Sets background to white */
-    padding: 20px; /* Adds padding around the content */
     border: 1px solid #ddd; /* Adds a border */
 }
 
@@ -82,4 +79,22 @@ footer {
         display: block;
         margin-top: 5px;
     }
+}
+
+.entry-header {
+    padding-bottom: 0px;
+    margin-bottom: -5px;
+}
+
+.entry {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+    border: 1px solid #ddd; /* Adds a border */
+    margin-bottom: 40px;
+    padding: 5;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.abstract {
+    padding-left: 20px;
 }
