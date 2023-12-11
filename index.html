@@ -14,8 +14,8 @@
             <nav>
                 <ul>
                     <li><a href="#about">About</a></li>
-                    <li><a href="#projects">Projects</a></li>
                     <li><a href="#papers">Papers</a></li>
+                    <li><a href="#projects">Projects</a></li>
                 </ul>
             </nav>
         </header>
@@ -52,6 +52,57 @@
                 </p>
                 <strong><a href="https://github.com/grantsrb/grantsrb.github.io/blob/main/pdfs/CV.pdf">CV.pdf</a></strong>
             </section>
+
+
+
+            <section id="papers">
+                <h2>Published Work</h2>
+                <div class="entry">
+                    <h3 class="entry-header"><a href="https://www.sciencedirect.com/science/article/pii/S0896627323004671">
+                    Interpreting the retinal neural code for natural scenes: From computations to neurons 
+                    </a></h3>
+                    <strong>Date Published: Sept. 6, 2023</strong> 
+                    <p class="authors"><em>
+                        Niru Maheswaranathan<sup>*</sup>, Lane T McIntosh<sup>*</sup>, Hidenori Tanaka<sup>*</sup>, Satchel Grant<sup>*</sup>,
+                        David B Kastner, Joshua B Melander, Aran Nayebi, Luke E Brezovec,
+                        Julia H Wang, Surya Ganguli, Stephen A Baccus
+                    </em></p>
+
+                    <p class="abstract">
+                    <strong><em>Abstract:</em></strong>
+                    Understanding the circuit mechanisms of the visual code for
+                    natural scenes is a central goal of sensory neuroscience. We show
+                    that a three-layer network model predicts retinal natural scene
+                    responses with an accuracy nearing experimental limits. The
+                    model’s internal structure is interpretable, as interneurons
+                    recorded separately and not modeled directly are highly
+                    correlated with model interneurons. Models fitted only to
+                    natural scenes reproduce a diverse set of phenomena related
+                    to motion encoding, adaptation, and predictive coding,
+                    establishing their ethological relevance to natural visual
+                    computation. A new approach decomposes the computations of
+                    model ganglion cells into the contributions of model
+                    interneurons, allowing automatic generation of new hypotheses
+                    for how interneurons with different spatiotemporal responses
+                    are combined to generate retinal computations, including
+                    predictive phenomena currently lacking an explanation.
+                    Our results demonstrate a unified and general approach to
+                    study the circuit mechanisms of ethological retinal
+                    computations under natural visual scenes.
+                    </p>
+
+                    <p class="reasonwhy">
+                    I love this work because it first does a beautiful demonstration
+                    of how to establish an isomorphism between biological and artificial
+                    neural networks, and then it goes a step further to show how
+                    you can use that sort of model for interpreting the real biological
+                    neural code.
+                    </p>
+
+                </div>
+            </section>
+
+
 
             <section id="projects">
                 <h2>Unpublished Projects</h2>
@@ -128,7 +179,8 @@
                     Then Alexis Chevalier et. al. published
                     <a href="https://arxiv.org/abs/2305.14788">Adapting Language Models to Compress Contexts</a>
                     that does the exact same idea. Chevalier et. al. managed
-                    to scale things up very nicely, and had excellent results.
+                    to scale things up very nicely, and had seemingly good
+                    results.
                     </p>
 
                 </div>
@@ -162,17 +214,25 @@
 
                     <p class="reasonwhy">
                     In this work, we imposed network pathway grouping on a simple CNN architecture
-                    and found that different features would get learned by different isolated subpathways
-                    in the network. We also showed that this grouped architecture had performance benefits
-                    over vanilla variants. We also made a poster <a href="http://cs231n.stanford.edu/reports/2022/pdfs/107p.pdf">here.</a>
-                    I think this work was great, but we struggled with our message and audience. It was
-                    a project for Stanford's <a href="http://cs231n.stanford.edu/">Computer Vision</a> course
-                    so we attempted to frame the project as an architectural contribution, validating the
-                    representations on a performance benchmark (CIFAR10 image classification). I think the
-                    project is more interesting, however, for its qualtitative findings about learned
-                    representations. I still think this work has promise, but I'm not familiar with the
-                    greater literature. And I think there has been some good theory work since we finished
-                    this writeup.
+                    and found that different isolated subpathways would spontaneously learn
+                    distinct features of the training data. We also showed that this grouped pathway
+                    architecture had performance benefits over vanilla variants when holding
+                    parameter counts constant. We also made a poster
+                    <a href="http://cs231n.stanford.edu/reports/2022/pdfs/107p.pdf">here.</a>
+                    I think this work was great, but we struggled with our message and audience.
+                    It was a project for Stanford's
+                    <a href="http://cs231n.stanford.edu/">Computer Vision</a> course
+                    so we attempted to frame the project as an architectural
+                    contribution, validating the representations on a
+                    performance benchmark (CIFAR10 image classification).
+                    I think the project is more interesting, however, for
+                    its qualtitative findings about learned representations.
+                    I still think this work has promise, but I'm not
+                    familiar with the greater literature. And since we
+                    completed this project, I think there has been
+                    some good theory work that could potentially explain
+                    our findings in terms of a
+                    <a href="https://arxiv.org/abs/2207.10430">Neural Race Reduction.</a>
                     </p>
 
                 </div>
@@ -209,60 +269,14 @@
                     Overall, this project's direction no longer seems promising as a longterm focus 😢
                     Another paper called <a href="https://arxiv.org/abs/2309.03241">GPT Can Solve Mathematical Problems Without a Calculator</a>
                     came out in September that essentially does what we were moving towards in terms of a Computer Science contribution.
-                    And the cognitive focus of our work is probably too abstract to be much of a contribution.
+                    And the cognitive focus of this work is probably too abstract to be much of a contribution.
                     This writeup was intended to be a NeurIPS workshop submission, but due to the reasons mentioned
                     above, combined with a misinterpretation of the workshop deadline (12AM vs 12PM 😅), it was never
-                    submitted and probably never will be.
+                    submitted (and probably never will be).
                     </p>
                 </div>
 
                     
-            </section>
-            <section id="papers">
-                <h2>Published Work</h2>
-                <div class="entry">
-                    <h3 class="entry-header"><a href="https://www.sciencedirect.com/science/article/pii/S0896627323004671">
-                    Interpreting the retinal neural code for natural scenes: From computations to neurons 
-                    </a></h3>
-                    <strong>Date Published: Sept. 6, 2023</strong> 
-                    <p class="authors"><em>
-                        Niru Maheswaranathan<sup>*</sup>, Lane T McIntosh<sup>*</sup>, Hidenori Tanaka<sup>*</sup>, Satchel Grant<sup>*</sup>,
-                        David B Kastner, Joshua B Melander, Aran Nayebi, Luke E Brezovec,
-                        Julia H Wang, Surya Ganguli, Stephen A Baccus
-                    </em></p>
-
-                    <p class="abstract">
-                    <strong><em>Abstract:</em></strong>
-                    Understanding the circuit mechanisms of the visual code for
-                    natural scenes is a central goal of sensory neuroscience. We show
-                    that a three-layer network model predicts retinal natural scene
-                    responses with an accuracy nearing experimental limits. The
-                    model’s internal structure is interpretable, as interneurons
-                    recorded separately and not modeled directly are highly
-                    correlated with model interneurons. Models fitted only to
-                    natural scenes reproduce a diverse set of phenomena related
-                    to motion encoding, adaptation, and predictive coding,
-                    establishing their ethological relevance to natural visual
-                    computation. A new approach decomposes the computations of
-                    model ganglion cells into the contributions of model
-                    interneurons, allowing automatic generation of new hypotheses
-                    for how interneurons with different spatiotemporal responses
-                    are combined to generate retinal computations, including
-                    predictive phenomena currently lacking an explanation.
-                    Our results demonstrate a unified and general approach to
-                    study the circuit mechanisms of ethological retinal
-                    computations under natural visual scenes.
-                    </p>
-
-                    <p class="reasonwhy">
-                    I love this work because it first does a beautiful demonstration
-                    of how to establish an isomorphism between biological and artificial
-                    neural networks, and then it goes a step further to show how
-                    you can use that sort of model for interpreting the real biological
-                    neural code.
-                    </p>
-
-                </div>
             </section>
         </main>
         <footer>
