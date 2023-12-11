@@ -63,7 +63,7 @@
                     </a></h3>
                     <strong>Date Published: Sept. 6, 2023</strong> 
                     <p class="authors"><em>
-                        Niru Maheswaranathan<sup>*</sup>, Lane T McIntosh<sup>*</sup>, Hidenori Tanaka<sup>*</sup>, Satchel Grant<sup>*</sup>,
+                        <strong>Niru Maheswaranathan<sup>*</sup>, Lane T McIntosh<sup>*</sup>, Hidenori Tanaka<sup>*</sup>, Satchel Grant<sup>*</sup></strong>,
                         David B Kastner, Joshua B Melander, Aran Nayebi, Luke E Brezovec,
                         Julia H Wang, Surya Ganguli, Stephen A Baccus
                     </em></p>
@@ -92,11 +92,62 @@
                     </p>
 
                     <p class="reasonwhy">
-                    I love this work because it first does a beautiful demonstration
+                    This was a big collaboration over the course of many years.
+                    I love this work because it is a beautiful demonstration
                     of how to establish an isomorphism between biological and artificial
-                    neural networks, and then it goes a step further to show how
-                    you can use that sort of model for interpreting the real biological
-                    neural code.
+                    neural networks, and it shows how you can use that sort
+                    of model for interpreting the real biological
+                    neural code. I am a co-first author on this work for writing
+                    most of the project code, developing many architectural improvements,
+                    and developing much of the interneuron comparisons.
+                    </p>
+
+                </div>
+
+                <div class="entry">
+                    <h3 class="entry-header"><a href="https://ieeexplore.ieee.org/document/9723187">
+                        A mechanistically interpretable model of the retinal neural code for natural scenes with multiscale adaptive dynamics
+                    </a></h3>
+                    <strong>Date Published: March 4, 2022</strong> 
+                    <p class="authors"><em>
+                        Xuehao Ding, Dongsoo Lee, Satchel Grant, Heike Stein, Lane McIntosh, Niru Maheswaranathan, Stephen Baccus
+                    </em></p>
+
+                    <p class="abstract">
+                    <strong><em>Abstract:</em></strong>
+                    The visual system processes stimuli over a wide range of
+                    spatiotemporal scales, with individual neurons receiving
+                    input from tens of thousands of neurons whose dynamics
+                    range from milliseconds to tens of seconds. This poses a
+                    challenge to create models that both accurately capture visual
+                    computations and are mechanistically interpretable. Here we
+                    present a model of salamander retinal ganglion cell spiking
+                    responses recorded with a multielectrode array that captures
+                    natural scene responses and slow adaptive dynamics. The model
+                    consists of a three-layer convolutional neural network (CNN)
+                    modified to include local recurrent synaptic dynamics taken
+                    from a linear-nonlinear-kinetic (LNK) model. We presented
+                    alternating natural scenes and uniform field white noise
+                    stimuli designed to engage slow contrast adaptation. To overcome
+                    difficulties fitting slow and fast dynamics together, we
+                    first optimized all fast spatiotemporal parameters, then
+                    separately optimized recurrent slow synaptic parameters. The
+                    resulting full model reproduces a wide range of retinal
+                    computations and is mechanistically interpretable, having
+                    internal units that correspond to retinal interneurons with
+                    biophysically modeled synapses. This model allows us to
+                    study the contribution of model units to any retinal computation,
+                    and examine how long-term adaptation changes the retinal neural
+                    code for natural scenes through selective adaptation of
+                    retinal pathways.
+                    </p>
+
+                    <p class="reasonwhy">
+                        This project was a good extension of the CNN retinal model
+                        that I listed earlier. In this work, we managed to give
+                        the CNN model recurrence and used previous kinetics constants
+                        to get the model to exhibit slow adaptation (something
+                        that was lacking from the previous work).
                     </p>
 
                 </div>
