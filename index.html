@@ -25,29 +25,23 @@
                 <p>
                     I'm currently a 3rd year PhD candidate at Stanford studying
                     cognition in Jay McClelland's lab.
-                    I study numeric cognition and spatial reasoning
-                    using multimodal and embodied connectionist models.
-                    My interests lie at the intersection of Psychology,
-                    Neuroscience, and Artificial Intelligence, generally in
-                    the broad, nebulously defined pursuit of understanding
-                    intelligence.
+                    I study mathematical cognition, abstract reasoning,
+                    and generalization mainly using modern interpretability
+                    methods in artificial neural networks.
                 </p>
                 <p>
-                    This blog is mainly to showcase my projects that
-                    are promising or interesting but are not (currently)
-                    worth publishing. These projects may find themselves
-                    listed here because they're at a reasonable state but
-                    I want to develop them further; I can't find the time
-                    to pursue them further and don't ever expect to find
-                    the time; or someone else beat me to the punch.
-                    For each project, I'll link to the repo/writeup
-                    and describe what I'm doing to make it better, or
-                    why I won't be pursuing it further.
+                    This blog is to showcase projects that
+                    are either published or promising/interesting but
+                    probably won't ever be published.
+                    These latter projects may find themselves
+                    listed here because they're at a reasonable state, but
+                    I can't find the time
+                    to pursue them further or someone else beat me to the punch.
                 </p>
                 <p>
-                    One final note, the date near the beginning of each
-                    entry refers to the date that the writeup was pushed
-                    to github or where ever it's hosted. This is not
+                    Note that the date near the beginning of each
+                    entry refers to the date that the linked writeup was
+                    pushed to github or published. This is not
                     necessarily the date that the blog entry was made!
                 </p>
                 <strong><a href="https://github.com/grantsrb/grantsrb.github.io/blob/main/pdfs/CV.pdf">CV.pdf</a></strong>
@@ -58,10 +52,64 @@
             <section id="papers">
                 <h2>Published Work</h2>
                 <div class="entry">
+                    <h3 class="entry-header"><a href="https://openreview.net/forum?id=8HhvCMamWq&referrer=%5BAuthor%20Console%5D(%2Fgroup%3Fid%3DICLR.cc%2F2024%2FWorkshop%2FRe-Align%2FAuthors%23your-submissions)">
+                    Symbolic Variables in Distributed Networks that Count
+                    </a></h3>
+                    <strong>Date Published:</strong> March 2, 2024<br>
+                    <strong>Journal/Venue:</strong> ICLR Re-Align Workshop and CogSci 2024
+                    <p class="authors"><em>
+                        Satchel Grant, Zhengxuan Wu, James L. McClelland, Noah D. Goodman
+                    </em></p>
+
+                    <p class="abstract">
+                    <strong><em>Abstract:</em></strong>
+                    The discrete entities of symbolic systems and their
+                    explicit relations make symbolic systems more transparent
+                    and easier to communicate. This is in contrast to neural
+                    systems, which are often opaque. It is understandable that
+                    psychologists often pursue interpretations of human
+                    cognition using symbolic characterizations, and it is
+                    clear that the ability to find symbolic variables within
+                    neural systems would be beneficial for interpreting and
+                    controlling Artificial Neural Networks (ANNs). Symbolic
+                    interpretations can, however, oversimplify non-symbolic
+                    systems. This has been demonstrated in findings from research
+                    on children's performance on tasks thought to depend on a
+                    concept of exact number, where recent findings suggest a
+                    gradience of counting ability in children's learning
+                    trajectories. In this work, we take inspiration from
+                    these findings to explore the emergence of symbolic
+                    representations in ANNs. We demonstrate how to align recurrent
+                    neural representations with high-level, symbolic
+                    representations of number by causally intervening on the
+                    neural system. We find that consistent, discrete representations
+                    of numbers do emerge in ANNs. We use this to inform the
+                    discussion on how neural systems represent quantity. The
+                    symbol-like representations in the network, however, evolve
+                    with learning, and can continue to vary after the neural
+                    network consistently solves the task, demonstrating the graded
+                    nature of symbolic variables in distributed systems.
+                    </p>
+
+                    <p class="reasonwhy">
+                    This is an early iteration of ongoing work. The general
+                    direction is interesting because DAS effectively
+                    allows us to do precise cognitive science directly
+                    on distributed networks. This is useful for not only
+                    understanding how humans come to do the seemingly symbolic
+                    processing that they do, but it's also promising for
+                    better understanding how artificial neural networks
+                    perform abstract reasoning and generalization.
+                    </p>
+
+                </div>
+
+                <div class="entry">
                     <h3 class="entry-header"><a href="https://www.sciencedirect.com/science/article/pii/S0896627323004671">
                     Interpreting the retinal neural code for natural scenes: From computations to neurons 
                     </a></h3>
-                    <strong>Date Published: Sept. 6, 2023</strong> 
+                    <strong>Date Published:</strong> Sept. 6, 2023<br>
+                    <strong>Journal/Venue:</strong> Neuron
                     <p class="authors"><em>
                         <strong>Niru Maheswaranathan<sup>*</sup>, Lane T McIntosh<sup>*</sup>, Hidenori Tanaka<sup>*</sup>, Satchel Grant<sup>*</sup></strong>,
                         David B Kastner, Joshua B Melander, Aran Nayebi, Luke E Brezovec,
@@ -108,7 +156,8 @@
                     <h3 class="entry-header"><a href="https://ieeexplore.ieee.org/document/9723187">
                         A mechanistically interpretable model of the retinal neural code for natural scenes with multiscale adaptive dynamics
                     </a></h3>
-                    <strong>Date Published: March 4, 2022</strong> 
+                    <strong>Date Published:</strong> March 4, 2022<br>
+                    <strong>Journal/Venue:</strong> Asilomar
                     <p class="authors"><em>
                         Xuehao Ding, Dongsoo Lee, Satchel Grant, Heike Stein, Lane McIntosh, Niru Maheswaranathan, Stephen Baccus
                     </em></p>
@@ -164,7 +213,7 @@
                         in Acquiring Numerical Cognitive Abilities    
                     </a></h3>
 
-                    <strong>Date Released: Dec 6, 2023 <br> </strong> 
+                    <strong>Date Released:</strong> Dec 6, 2023 <br>
 
                     <p class="abstract">
                     <strong><em>Abstract:</em></strong> 
@@ -202,7 +251,7 @@
                     <h3 class="entry-header"><a href="https://github.com/grantsrb/ctx_cmp/blob/master/Grant-March2023-LeveragingLLMsForContextCompression.pdf">
                     Leveraging Large Language Models for Context Compression
                     </a></h3>
-                    <strong>Date Released: May 31, 2023 <br> </strong> 
+                    <strong>Date Released:</strong> May 31, 2023 <br>
 
                     <p class="abstract">
                     <strong><em>Abstract:</em></strong> Large Language Models (LLMs) have demonstrated
@@ -242,7 +291,7 @@
                     <h3 class="entry-header"><a href="http://cs231n.stanford.edu/reports/2022/pdfs/107.pdf">
                     Spontaneous Decomposition from Grouped Network Pathways
                     </a></h3>
-                    <strong>Date Submitted: Dec, 2022 (hosted online Jul 1, 2022) <br> </strong> 
+                    <strong>Date Submitted:</strong> Dec, 2022 (hosted online Jul 1, 2022) <br>
 
                     <p class="abstract">
                     <strong><em>Abstract:</em></strong> There have been many recent
@@ -295,7 +344,7 @@
                         Improving Chain of Thought with Chain of Shortcuts
                     </a></h3>
 
-                    <strong>Date Released: Dec 6, 2023 <br> </strong> 
+                    <strong>Date Released:</strong> Dec 6, 2023 <br>
 
                     <p class="abstract">
                     <strong><em>Abstract:</em></strong> 
