@@ -23,18 +23,21 @@
             <section id="about">
                 <h2>About Me</h2>
                 <p>
-                    I'm currently a 3rd year PhD candidate at Stanford studying
-                    cognition in Jay McClelland's lab.
+                    I'm currently a 4th year PhD candidate at Stanford
+                    studying cognition in
+                    <a href="https://en.wikipedia.org/wiki/James_McClelland_(psychologist)">Jay McClelland's</a>
+                    lab.
                     I study mathematical cognition, abstract reasoning,
-                    and generalization mainly using modern interpretability
+                    and generalization in computational settings mainly
+                    through the use of mechanistic interpretability
                     methods in artificial neural networks. My interests
                     tend to fall into the intersection of psych, neuro,
                     and comp sci.
                 </p>
                 <p>
-                    This blog is to showcase my projects that
+                    This site is mainly to showcase projects that
                     are either published or promising/interesting but
-                    probably won't ever be published.
+                    probably won't be published.
                     These latter projects may find themselves
                     listed here because they're at a reasonable state, but
                     I can't find the time
@@ -54,6 +57,71 @@
 
             <section id="papers">
                 <h2>Published Work</h2>
+                <div class="entry">
+                    <h3 class="entry-header"><a href="https://github.com/grantsrb/grantsrb.github.io/blob/main/pdfs/DAS_Symbols_ICLR_2025.pdf">
+                    Emergent Symbol-like Number Variables in Artificial Neural Networks
+                    </a></h3>
+                    <strong>Date Submitted:</strong> October 1, 2024<br>
+                    <strong>Journal/Venue:</strong> ICLR 2025 (under review)
+                    <p class="authors"><em>
+                        Satchel Grant, Noah D. Goodman, James L. McClelland
+                    </em></p>
+
+                    <p class="abstract">
+                    <strong><em>Abstract:</em></strong>
+                    Symbolic programs, defined by discrete variables with
+                    explicit rules and relations, often have the benefit
+                    of interpretability, ease of communication, and
+                    generalization. This is contrasted against neural
+                    systems, consisting of distributed representations with
+                    rules and relations defined by learned parameters, which
+                    often have opaque inner mechanisms. There is an interest
+                    in finding unity between these two types of systems for
+                    cognitive and computer scientists alike. There is no
+                    guarantee, however, that these two types of systems are
+                    reconcilable. To what degree do neural networks induce
+                    abstract, mutable, slot-like variables in order to
+                    achieve next-token prediction (NTP) goals? Can neural
+                    functions be thought of analogously to a computer
+                    program? In this work, we train neural systems using
+                    NTP on numeric cognitive tasks and then seek to
+                    understand them at the level of symbolic programs. We
+                    use a combination of causal interventions and visualization
+                    methods in pursuit of this goal. We find that models
+                    of sufficient dimensionality do indeed develop strong
+                    analogs of symbolic algorithms purely from the NTP
+                    objective. We then ask how variations on the tasks and
+                    model architectures  affect the models' learned solutions
+                    to find that numeric symbols are not formed for every
+                    variant of the task, and transformers solve the problem
+                    in a different fashion than their recurrent counterparts.
+                    Lastly, we show that in all cases, some degree of
+                    gradience exists in the neural symbols, highlighting the
+                    difficulty of finding simple, interpretable symbolic
+                    stories of how neural networks perform their tasks.
+                    Taken together, our results are consistent with the
+                    view that neural networks can approximate interpretable
+                    symbolic programs of number cognition, but the particular
+                    program they approximate and the extent to which they
+                    approximate it can vary widely, depending on the network
+                    architecture, training data, extent of training, and
+                    network size.
+                    </p>
+
+                    <p class="reasonwhy">
+                    This is the continuation of an ICLR Re-Align 2024 Workshop
+                    paper linked below. This work provides a good demonstration
+                    of what types of distributed representations can form
+                    as a function of next-token prediction,
+                    and how these representations can change depending on
+                    architectural choices such as size or attention vs
+                    recurrence. This is hopefully the first of many of my
+                    projects that use causal analyses to address claims
+                    about mechanism.
+                    </p>
+
+                </div>
+
                 <div class="entry">
                     <h3 class="entry-header"><a href="https://openreview.net/forum?id=8HhvCMamWq&referrer=%5BAuthor%20Console%5D(%2Fgroup%3Fid%3DICLR.cc%2F2024%2FWorkshop%2FRe-Align%2FAuthors%23your-submissions)">
                     Symbolic Variables in Distributed Networks that Count
@@ -209,6 +277,45 @@
 
             <section id="projects">
                 <h2>Unpublished Projects</h2>
+
+                <div class="entry">
+                    <h3 class="entry-header"><a href="https://github.com/grantsrb/grantsrb.github.io/blob/main/pdfs/DMCO_NeurIPS_Workshops_2024.pdf">
+
+                        Direct Manifold Capacity Optimization
+                    </a></h3>
+
+                    <strong>Date:</strong> October 9, 2024<br>
+                    <p class="authors"><em>
+                        Satchel Grant, Chi-Ning Chou, Thomas Edward Yerxa, SueYeon Chung
+                    </em></p>
+
+                    <p class="abstract">
+                    <strong><em>Abstract:</em></strong> 
+                    Manifold capacity is a tool for interpreting artificial
+                    and biological neural representations. Although the technique has
+                    shown utility in many analyses, an open question remains about
+                    whether the theory can also be used as a training objective for
+                    useful/robust neural representations.
+                    Previous work has made progress towards this goal
+                    in self-supervised learning settings by making assumptions
+                    about the shape of the manifolds. In this work, we use
+                    differentiable quadratic programming to maximize manifold
+                    capacity directly, without using simplifying assumptions.
+                    We show that our technique can match the overall performance of
+                    the pre-existing baselines with the ability to tune a hyperparameter
+                    to minimize the cumulative gradient steps or the total
+                    training samples.
+                    Our results show promise for exploring domains less suited to
+                    pre-existing simplifying assumptions, and our results add to
+                    the mounting evidence of manifold capacity as a powerful
+                    tool for characterizing neural representations.
+                    </p>
+
+                    <p class="reasonwhy">
+                    This is ongoing work that will soon be submitted to ICML.
+                    </p>
+                </div>
+
 
                 <div class="entry">
                     <h3 class="entry-header"><a href="https://github.com/grantsrb/cogmtc/blob/master/Grant-Dec2023-BidirectionalInfluencesOfGroundedQuantificationAndLanguageInAcquiringNumericalCognitiveAbilities.pdf">
