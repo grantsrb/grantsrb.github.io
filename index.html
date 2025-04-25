@@ -28,8 +28,8 @@
                     <a href="https://en.wikipedia.org/wiki/James_McClelland_(psychologist)">Jay McClelland's</a>
                     lab.
                     I study mathematical cognition, abstract reasoning,
-                    and generalization in computational settings mainly
-                    through the use of mechanistic interpretability
+                    and generalization in computational settings
+                    through the use of interpretability
                     methods in artificial neural networks. My interests
                     tend to fall into the intersection of psych, neuro,
                     and comp sci.
@@ -39,7 +39,7 @@
                     are either published or promising/interesting but
                     probably won't be published.
                     These latter projects may find themselves
-                    listed here because they're at a reasonable state, but
+                    here because they're at a reasonable state, but
                     I can't find the time
                     to pursue them further, or someone else beat me to the
                     punch.
@@ -58,122 +58,45 @@
             <section id="papers">
                 <h2>Published Work</h2>
                 <div class="entry">
-                    <h3 class="entry-header"><a href="https://github.com/grantsrb/grantsrb.github.io/blob/main/pdfs/DAS_Symbols_ICLR_2025.pdf">
+                    <h3 class="entry-header"><a href="https://arxiv.org/abs/2501.06141">
                     Emergent Symbol-like Number Variables in Artificial Neural Networks
                     </a></h3>
                     <strong>Date Submitted:</strong> October 1, 2024<br>
-                    <strong>Journal/Venue:</strong> ICLR 2025 (under review)
+                    <strong>Journal/Venue:</strong> TMLR 2025 (under review)
                     <p class="authors"><em>
                         Satchel Grant, Noah D. Goodman, James L. McClelland
                     </em></p>
 
                     <p class="abstract">
                     <strong><em>Abstract:</em></strong>
-                    Symbolic programs, defined by discrete variables with
-                    explicit rules and relations, often have the benefit
-                    of interpretability, ease of communication, and
-                    generalization. This is contrasted against neural
-                    systems, consisting of distributed representations with
-                    rules and relations defined by learned parameters, which
-                    often have opaque inner mechanisms. There is an interest
-                    in finding unity between these two types of systems for
-                    cognitive and computer scientists alike. There is no
-                    guarantee, however, that these two types of systems are
-                    reconcilable. To what degree do neural networks induce
-                    abstract, mutable, slot-like variables in order to
-                    achieve next-token prediction (NTP) goals? Can neural
-                    functions be thought of analogously to a computer
-                    program? In this work, we train neural systems using
-                    NTP on numeric cognitive tasks and then seek to
-                    understand them at the level of symbolic programs. We
-                    use a combination of causal interventions and visualization
-                    methods in pursuit of this goal. We find that models
-                    of sufficient dimensionality do indeed develop strong
-                    analogs of symbolic algorithms purely from the NTP
-                    objective. We then ask how variations on the tasks and
-                    model architectures  affect the models' learned solutions
-                    to find that numeric symbols are not formed for every
-                    variant of the task, and transformers solve the problem
-                    in a different fashion than their recurrent counterparts.
-                    Lastly, we show that in all cases, some degree of
-                    gradience exists in the neural symbols, highlighting the
-                    difficulty of finding simple, interpretable symbolic
-                    stories of how neural networks perform their tasks.
-                    Taken together, our results are consistent with the
-                    view that neural networks can approximate interpretable
-                    symbolic programs of number cognition, but the particular
-                    program they approximate and the extent to which they
-                    approximate it can vary widely, depending on the network
-                    architecture, training data, extent of training, and
-                    network size.
+                    What types of numeric representations emerge in neural systems? What would a satisfying answer to this question look like? In this work, we interpret Neural Network (NN) solutions to sequence based counting tasks through a variety of lenses. We seek to understand how well we can understand NNs through the lens of interpretable Symbolic Algorithms (SAs), where SAs are defined by precise, abstract, mutable variables used to perform computations. We use GRUs, LSTMs, and Transformers trained using Next Token Prediction (NTP) on numeric tasks where the solutions to the tasks depend on numeric information only latent in the task structure. We show through multiple causal and theoretical methods that we can interpret NN's raw activity through the lens of simplified SAs when we frame the neural activity in terms of interpretable subspaces rather than individual neurons. Depending on the analysis, however, these interpretations can be graded, existing on a continuum, highlighting the philosophical question of what it means to "interpret" neural activity, and motivating us to introduce Alignment Functions to add flexibility to the existing Distributed Alignment Search (DAS) method. Through our specific analyses we show the importance of causal interventions for NN interpretability; we show that recurrent models develop graded, symbol-like number variables within their neural activity; we introduce a generalization of DAS to frame NN activity in terms of linear functions of interpretable variables; and we show that Transformers must use anti-Markovian solutions -- solutions that avoid using cumulative, Markovian hidden states -- in the absence of sufficient attention layers. We use our results to encourage interpreting NNs at the level of neural subspaces through the lens of SAs.
                     </p>
 
                     <p class="reasonwhy">
-                    This is the continuation of an ICLR Re-Align 2024 Workshop
-                    paper linked below. This work provides a good demonstration
-                    of what types of distributed representations can form
-                    as a function of next-token prediction,
-                    and how these representations can change depending on
-                    architectural choices such as size or attention vs
-                    recurrence. This is hopefully the first of many of my
-                    projects that use causal analyses to address claims
-                    about mechanism.
                     </p>
 
                 </div>
 
                 <div class="entry">
-                    <h3 class="entry-header"><a href="https://openreview.net/forum?id=8HhvCMamWq&referrer=%5BAuthor%20Console%5D(%2Fgroup%3Fid%3DICLR.cc%2F2024%2FWorkshop%2FRe-Align%2FAuthors%23your-submissions)">
-                    Symbolic Variables in Distributed Networks that Count
+                    <h3 class="entry-header"><a href="https://arxiv.org/abs/2501.06164">
+                    Model Alignment Search
                     </a></h3>
-                    <strong>Date Published:</strong> March 2, 2024<br>
-                    <strong>Journal/Venue:</strong> ICLR Re-Align Workshop and CogSci 2024
+                    <strong>Date Submitted:</strong> January 10, 2025<br>
+                    <strong>Journal/Venue:</strong> ICLR ReAlign Workshop 2025
                     <p class="authors"><em>
-                        Satchel Grant, Zhengxuan Wu, James L. McClelland, Noah D. Goodman
+                        Satchel Grant
                     </em></p>
 
                     <p class="abstract">
                     <strong><em>Abstract:</em></strong>
-                    The discrete entities of symbolic systems and their
-                    explicit relations make symbolic systems more transparent
-                    and easier to communicate. This is in contrast to neural
-                    systems, which are often opaque. It is understandable that
-                    psychologists often pursue interpretations of human
-                    cognition using symbolic characterizations, and it is
-                    clear that the ability to find symbolic variables within
-                    neural systems would be beneficial for interpreting and
-                    controlling Artificial Neural Networks (ANNs). Symbolic
-                    interpretations can, however, oversimplify non-symbolic
-                    systems. This has been demonstrated in findings from research
-                    on children's performance on tasks thought to depend on a
-                    concept of exact number, where recent findings suggest a
-                    gradience of counting ability in children's learning
-                    trajectories. In this work, we take inspiration from
-                    these findings to explore the emergence of symbolic
-                    representations in ANNs. We demonstrate how to align recurrent
-                    neural representations with high-level, symbolic
-                    representations of number by causally intervening on the
-                    neural system. We find that consistent, discrete representations
-                    of numbers do emerge in ANNs. We use this to inform the
-                    discussion on how neural systems represent quantity. The
-                    symbol-like representations in the network, however, evolve
-                    with learning, and can continue to vary after the neural
-                    network consistently solves the task, demonstrating the graded
-                    nature of symbolic variables in distributed systems.
+                    When can we say that two neural systems are the same? The answer to this question is goal-dependent, and it is often addressed through correlative methods such as Representational Similarity Analysis (RSA) and Centered Kernel Alignment (CKA). We find ourselves chiefly interested in the relationship between representations and behavior, asking ourselves how we can isolate specific functional aspects of representational similarity to relate our measures to behavior -- avoiding cause vs. correlation pitfalls in the process. In this work, we introduce Model Alignment Search (MAS), a method for causally exploring distributed representational similarity as it relates to behavior. The method learns invertible linear transformations that find an aligned subspace between two distributed networks' representations where functional information can be isolated and manipulated. We first show that the method can be used to transfer values of specific causal variables -- such as the number of items in a counting task -- between networks with different training seeds and different architectures. We then explore open questions in number cognition by comparing different types of numeric representations in models trained on structurally different tasks, we explore differences between MAS and preexisting functional similarity methods, and lastly, we introduce a counterfactual latent auxiliary loss that helps shape functionally relevant alignments even in cases where we do not have causal access to one of the two models for training. 
                     </p>
 
                     <p class="reasonwhy">
-                    This is an early iteration of ongoing work. The general
-                    direction is interesting because DAS effectively
-                    allows us to do precise cognitive science directly
-                    on distributed networks. This is useful for not only
-                    understanding how humans come to do the seemingly symbolic
-                    processing that they do, but it's also promising for
-                    better understanding how artificial neural networks
-                    perform abstract reasoning and generalization.
                     </p>
 
                 </div>
+
 
                 <div class="entry">
                     <h3 class="entry-header"><a href="https://www.sciencedirect.com/science/article/pii/S0896627323004671">
