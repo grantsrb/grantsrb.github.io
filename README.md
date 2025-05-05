@@ -21,6 +21,7 @@ Please note that the date listed at the beginning of each entry refers to when t
 Feel free to reach out:
 
 - **Email**: grantsrb@stanford.edu
+- **GitHub**: [github.com/grantsrb](https://www.github.com/grantsrb)  
 - **LinkedIn**: [linkedin.com/in/grantsrb](https://www.linkedin.com/in/grantsrb)  
 - **Twitter/X**: [@grantsrb](https://x.com/grantsrb)
 
