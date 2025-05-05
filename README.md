@@ -4,7 +4,7 @@ Welcome to my personal website, hosted via GitHub Pages at [grantsrb.github.io](
 
 ## About Me
 
-I'm currently a 4th-year Ph.D. candidate at Stanford University, working in [Jay McClelland's lab](https://en.wikipedia.org/wiki/Jay_McClelland). My research focuses on mathematical cognition, abstract reasoning, and generalization in computational settings. I employ interpretability methods in artificial neural networks to explore these areas, aiming to bridge insights from psychology, neuroscience, and computer science.
+I'm currently a 4th-year Ph.D. candidate at Stanford University, working in [Jay McClelland's lab](https://en.wikipedia.org/wiki/Jay_McClelland). My research focuses on mathematical cognition, interpretability, and alignment. I tend to employ and develop interpretability methods in artificial neural networks in order to explore these topics, aiming to bridge insights from psychology, neuroscience, and computer science.
 
 ## Website Overview
 
