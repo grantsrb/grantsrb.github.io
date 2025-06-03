@@ -125,6 +125,18 @@ footer {
     border: 1px solid var(--border);
 }
 
+.entry-img {
+    width: 100%;
+    height: auto;         /* Automatically adjusts height proportionally */
+    max-height: 400px;
+    object-fit: contain;  /* Keeps the entire image visible without cropping */
+    display: block;       /* Removes inline spacing */
+    border-radius: 8px;
+    margin-bottom: 15px;
+    margin: 0 auto 15px;  /* Centers the image horizontally and adds spacing below */
+    border-radius: 8px;   /* Smooth rounded corners */
+}
+
 .abstract {
     padding-top: 10px;
     font-size: 0.95em;
