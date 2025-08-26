@@ -162,14 +162,14 @@
                     <img src="assets/MASIntervention.png" alt="MAS Illustration" class="entry-img">
 
                     <strong>Date Published:</strong> January 10, 2025<br>
-                    <strong>Journal/Venue:</strong> ICLR ReAlign Workshop 2025 (and under review at NeurIPS)
+                    <strong>Journal/Venue:</strong> ICLR ReAlign Workshop 2025 (and under review at TMLR 2025)
                     <p class="authors"><em>
                         Satchel Grant
                     </em></p>
 
                     <p class="abstract">
                     <strong><em>Abstract:</em></strong>
-                    When can we say that two neural systems are the same? The answer to this question is goal-dependent, and it is often addressed through correlative methods such as Representational Similarity Analysis (RSA) and Centered Kernel Alignment (CKA). What nuances do we miss, however, when we fail to causally probe the representations? Do the dangers of cause vs. correlation exist in comparative representational analyses? In this work, we introduce a method for connecting neural representational similarity to behavior through causal interventions. The method learns orthogonal transformations that find an aligned subspace in which behavioral information from multiple distributed networks' representations can be isolated and interchanged. We first show that the method can be used to transfer the behavior from one frozen Neural Network (NN) to another in a manner similar to model stitching, and we show how the method can complement correlative similarity measures like RSA. We then introduce an efficient subspace orthogonalization technique using the Gram-Schmidt process---that can also be used for Distributed Alignment Search (DAS)---allowing us to perform analyses on larger models. Next, we empirically and theoretically show how our method can generalize to a form of model stitching, it can be more restrictive than model stitching when desired, and it reduces the number of required matrices for a comparison of n models from quadratic to linear in n. We then show how we can augment the loss objective with an auxiliary loss to train causally relevant alignments even when we can only read the representations from one of the two networks during training. And lastly, we use number representations as a case study to explore how our method can be used to compare specific types of representational information across tasks and models.
+                    When can we say that two neural systems are the same? What nuances do we miss when we fail to causally probe the representations of the systems? In this work, we introduce a method for connecting neural representational similarity to behavior through causal interventions. The method learns transformations that find an aligned subspace in which behavioral information can be interchanged between multiple distributed networks' representations. We first show that the method can be used to transfer the behavior from one frozen Neural Network (NN) to another in a manner similar to model stitching, and we show how the method can differ from correlative similarity measures like Representational Similarity Analysis. Next, we empirically and theoretically show how the method can be equivalent to model stitching when desired, or it can take a form that has a more restrictive focus to shared causal information; in both forms, it reduces the number of required matrices for a comparison of n models to be linear in n. We then present a case study on number-related tasks showing that the method can be used to examine specific subtypes of causal information, and we present another case study showing that the method can reveal toxicity in fine-tuned DeepSeek-r1-Qwen-1.5B models. Lastly, we show how to augment the loss with a counterfactual latent auxiliary objective to improve causal relevance when one of the two networks is causally inaccessible (as is often the case in comparisons with biological networks). We use our results to encourage the use of causal methods in neural similarity analyses and to suggest future explorations of network similarity methodology for model misalignment. 
                     </p>
 
                     <p class="reasonwhy">
@@ -179,12 +179,12 @@
                     a DAS-like method on human brains. I feel the need to clarify that
                     the sole-authorship was with the approval of my advisor, Jay McClelland.
                     I offered for him to be a co-author, but he felt that he had not
-                    contributed enough to justify authorship (due to his stretched schedule).
-                    He is an extremely supportive advisor, and I am grateful for both the
-                    guidance and freedom that he has granted me. Similarly for Noah Goodman,
+                    contributed enough to justify authorship (in part due to his stretched
+                    schedule).  He is an extremely supportive advisor, and I am grateful for
+                    both the guidance and freedom that he has granted me. Similarly for Noah Goodman,
                     who has been a great mentor and collaborator on the Emergent Symbol-like
-                    Number Variables paper, but who did not contribute to this work. I hope
-                    to one day manage as many projects as they do!
+                    Number Variables paper, but who could not find the time to
+                    contribute to this work.
                     </p>
                 </div>
 
@@ -300,7 +300,7 @@
                         Control and Predictivity in Neural Interpretability
                     </a></h3>
 
-                    <img src="assets/intervened_pca.pdf" alt="Rep divergence fig" class="entry-img">
+                    <img src="assets/intervened_pca.png" alt="Rep divergence fig" class="entry-img">
 
                     <strong>Date:</strong> Aug 22, 2024<br>
                     <p class="authors"><em>
@@ -354,7 +354,7 @@
                         Discovering Functionally Sufficient Projections using Functional Component Analysis
                     </a></h3>
 
-                    <img src="assets/fsp_diagram.pdf" alt="fsp diagram" class="entry-img">
+                    <img src="assets/fsp_diagram.png" alt="fsp diagram" class="entry-img">
 
                     <strong>Date:</strong> Aug 22, 2024<br>
                     <p class="authors"><em>
