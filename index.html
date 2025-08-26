@@ -53,16 +53,17 @@
             <section id="about">
                 <h2>About Me</h2>
                 <p>
-                    I'm currently a 4th year PhD candidate at Stanford
-                    studying Cognitive Psychology and computational
-                    intelligence in
+                    I'm currently a 5th year PhD candidate at Stanford
+                    studying neural interpretability in
                     <a href="https://en.wikipedia.org/wiki/James_McClelland_(psychologist)">Jay McClelland's</a>
                     lab. My research tends to be a blend of Cognitive Psychology,
-                    Systems Neuroscience, and Computer Science. My most
+                    Neuroscience, and Computer Science. My most
                     recent research has focused on interpretability and
                     alignment methods, number cognition, and visual processing.
                 </p>
                 <p>
+                    I use this site to host my CV, list my publications,
+                    and share some of my ongoing projects.
                     I list a number of projects on this site that
                     are promising/interesting but probably won't be published.
                     These projects may find themselves here because they're
@@ -289,6 +290,107 @@
                     </p>
 
                 </div>
+            </section>
+
+            <section id="projects">
+                <h2>Projects Under Review</h2>
+
+                <div class="entry">
+                    <h3 class="entry-header"><a href="https://github.com/grantsrb/grantsrb.github.io/blob/main/pdfs/pdfs/Rep_Divergence___MechInterp_Workshop.pdf">
+                        Control and Predictivity in Neural Interpretability
+                    </a></h3>
+
+                    <img src="assets/intervened_pca.pdf" alt="Rep divergence fig" class="entry-img">
+
+                    <strong>Date:</strong> Aug 22, 2024<br>
+                    <p class="authors"><em>
+                        Satchel Grant, Alexa Tartaglini
+                    </em></p>
+
+                    <p class="abstract">
+                    <strong><em>Abstract:</em></strong> 
+                    For the goals of mechanistic interpretability, correlational methods
+                    are typically easy to scale and use, and can provide strong predictivity
+                    of Neural Network (NN) representations. However, they can lack causal
+                    fidelity which can limit their relevance to NN computation and behavior.
+                    Alternatively, causal approaches can offer strong behavioral control via
+                    targeted interventions, making them superior for understanding
+                    computational cause and effect. However, what if causal methods use
+                    out-of-distribution representations to produce their effects? Does this
+                    raise concerns about the faithfulness of the claims that can be made
+                    about the NN's native computations? In this work, we explore this
+                    possibility of this representational divergence. We ask to what degree
+                    do causally intervened representations diverge from the native
+                    distribution, and in what situations is this divergence acceptable?
+                    Using Distributed Alignment Search (DAS) as a case study, we first
+                    demonstrate the existence of causally intervened representational
+                    divergence in interventions that provide strong behavioral control, and
+                    we show that stronger behavioral control can correlate with more divergent
+                    intervened representations. We then provide a theoretical discussion showing
+                    sufficient ways for this divergence to occur in both innocuous and
+                    potentially pernicious ways. We then provide a theoretical demonstration
+                    that causal interventions typically assume principles of additivity,
+                    calling into question the use of nonlinear methods for causal manipulations.
+                    Lastly, for cases in which representational divergence is undesirable, we
+                    demonstrate how to incorporate a counterfactual latent loss to constrain
+                    intervened representations to remain closer to the native distribution.
+                    Together, we
+                    use our results to suggest that although causal methods are superior for
+                    most interpretability goals, a complete account of NN representations
+                    balances computational control with neural predictivity, with the optimal
+                    weighting depending on the goals of the research.
+                    
+                    </p>
+
+                    <p class="reasonwhy">
+                    This particular writeup was submitted to the mech interp workshop at NeurIPS 2025.
+                    This is onlgoing work, however, and it will likely become an ICLR 2026
+                    submission with expanded focus on causal interventions in general.
+                    </p>
+                </div>
+
+                <div class="entry">
+                    <h3 class="entry-header"><a href="https://github.com/grantsrb/grantsrb.github.io/blob/main/pdfs/pdfs/pdfs/fca_coginterp_workshop.pdff">
+                        Discovering Functionally Sufficient Projections using Functional Component Analysis
+                    </a></h3>
+
+                    <img src="assets/fsp_diagram.pdf" alt="fsp diagram" class="entry-img">
+
+                    <strong>Date:</strong> Aug 22, 2024<br>
+                    <p class="authors"><em>
+                        Satchel Grant
+                    </em></p>
+
+                    <p class="abstract">
+                    <strong><em>Abstract:</em></strong> 
+                    Many neural interpretability methods attempt to decompose Neural
+                    Network (NN) activity into vector directions or features along
+                    which variability serves to represent some interpretable aspect
+                    of how the NN performs its computations. In correlative analyses,
+                    these features can be used to classify what inputs and outputs
+                    correlate with changes in the feature; in casual analyses, these
+                    features can be used to causally influence computation and behavior.
+                    In both cases, it is easy to view these features as satisfying as
+                    ways to interpret NN activity. What if each feature, however,
+                    is an incomplete part of the story? For any given feature, is
+                    it necessary for the NN's computations, or is it only sufficient?
+                    In this work, we present a method for isolating Functionally
+                    Sufficient Projections (FSPs) in NN latent vectors, and we use
+                    a synthetic case study on MultiLayer Perceptrons (MLPs) to find
+                    that multiple, mutually orthogonal FSPs can produce the same
+                    behavior. We use the results of this work as a cautionary tale
+                    about claims of neural necessity.
+                    </p>
+
+                    <p class="reasonwhy">
+                    This is really interesting work for the philosophy of
+                    neural interpretability. Are sufficient circuits enough
+                    for AI safety? This particular version was submitted to the
+                    cog interp neurips workshop 2026. I keep meaning to scale
+                    this work up, but GPU arbitrage is difficult...
+                    </p>
+                </div>
+
             </section>
 
 
