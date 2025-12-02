@@ -54,7 +54,7 @@
                 <h2>About Me</h2>
                 <p>
                     I'm currently a 5th year PhD candidate at Stanford
-                    studying neural interpretability in
+                    studying cognitive/neural interpretability in
                     <a href="https://en.wikipedia.org/wiki/James_McClelland_(psychologist)">Jay McClelland's</a>
                     lab. My research tends to be a blend of Cognitive Psychology,
                     Neuroscience, and Computer Science. My most
@@ -95,6 +95,62 @@
 
             <section id="papers">
                 <h2>Featured Work</h2>
+                <div class="entry">
+                    <h3 class="entry-header"><a href="https://github.com/grantsrb/grantsrb.github.io/blob/main/pdfs/Rep_Divergence___MechInterp_Workshop.pdf">
+                        Addressing divergent representations from causal interventions on neural networks
+                    </a></h3>
+
+                    <img src="assets/HiddenCircuitsRevised.png" alt="Hidden circuits fig" class="entry-img">
+
+                    <strong>Date Submitted:</strong> Sept 19, 2025<br>
+                    <strong>Journal/Venue:</strong> Under Review at ICLR 2026
+                    <p class="authors"><em>
+                        Satchel Grant, Simon Jerome Han, Alexa Tartaglini, Christopher Potts
+                    </em></p>
+
+
+                    <p class="abstract">
+                    <strong><em>Abstract:</em></strong> 
+                    A common approach to mechanistic interpretability is to
+                    causally manipulate model representations via targeted
+                    interventions in order to understand what those
+                    representations encode. Here we ask whether such
+                    interventions create out-of-distribution (divergent)
+                    representations, and whether this raises concerns about
+                    how faithful their resulting explanations are to the target
+                    model in its natural state. First, we demonstrate
+                    theoretically and empirically that common causal
+                    intervention techniques often do shift internal
+                    representations away from the natural distribution of
+                    the target model. Then, we provide a theoretical analysis
+                    of two cases of such divergences: "harmless" divergences
+                    that occur in the behavioral null-space of the layer(s) of
+                    interest, and "pernicious" divergences that activate
+                    hidden network pathways and cause dormant behavioral
+                    changes. Finally, in an effort to mitigate the
+                    pernicious cases, we apply and modify the Counterfactual
+                    Latent (CL) loss from
+                    <a href="https://arxiv.org/abs/2501.06164"></a>Grant (2025)</a>
+                    allowing representations from causal interventions to remain
+                    closer to the natural distribution, reducing the likelihood
+                    of harmful divergences while preserving the interpretive
+                    power of the interventions. Together, these results highlight
+                    a path towards more reliable interpretability methods.
+                    </p>
+
+                    <p class="reasonwhy">
+                    This manuscript is the continuation of the
+                    <a href="https://arxiv.org/abs/2501.06164">Control and Predictivity in Neural Interpretability</a>
+                    manuscript accepted to the MechInterp Workshop at NeurIPS 2025.
+                    This project helped me a lot in understanding the nuances
+                    of causal interventions, and in understanding how complex
+                    neural network functional landscapes can be. A part of me
+                    feels pessimistic about the future of neuron-level or
+                    subspace-level interpretability, but I'm hopeful for the
+                    future of neural network analysis more broadly.
+                    </p>
+                </div>
+
                 <div class="entry">
                     <h3 class="entry-header"><a href="https://arxiv.org/abs/2501.06141">
                     Emergent Symbol-like Number Variables in Artificial Neural Networks
@@ -297,13 +353,13 @@
                 <h2>Projects Under Review</h2> -->
 
                 <div class="entry">
-                    <h3 class="entry-header"><a href="https://github.com/grantsrb/grantsrb.github.io/blob/main/pdfs/Rep_Divergence___MechInterp_Workshop.pdf">
+                    <h3 class="entry-header"><a href="https://openreview.net/forum?id=1aZeCatGfy">
                         Control and Predictivity in Neural Interpretability
                     </a></h3>
 
                     <img src="assets/intervened_pca.png" alt="Rep divergence fig" class="entry-img">
 
-                    <strong>Date Accepted:</strong> Sept 24, 2022<br>
+                    <strong>Date Accepted:</strong> Sept 24, 2025<br>
                     <strong>Journal/Venue:</strong> MechInterp Workshop NeurIPS 2025
                     <p class="authors"><em>
                         Satchel Grant, Alexa Tartaglini
@@ -359,7 +415,7 @@
 
                     <img src="assets/fsp_diagram.png" alt="fsp diagram" class="entry-img">
 
-                    <strong>Date Accepted:</strong> Sept 24, 2022<br>
+                    <strong>Date Accepted:</strong> Sept 24, 2025<br>
                     <strong>Journal/Venue:</strong> CogInterp NeurIPS Workshop 2025                    
                     <p class="authors"><em>
                         Satchel Grant
@@ -619,7 +675,7 @@
         </main>
 
         <footer>
-            <p>&copy; 2023 Satchel Grant</p>
+            <p>&copy; 2025 Satchel Grant</p>
         </footer>
     </div>
 </body>
