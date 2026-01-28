@@ -138,9 +138,14 @@ footer {
 }
 
 .abstract {
-    padding-top: 10px;
-    font-size: 0.95em;
+    margin-top: 12px;
+    padding: 14px 18px;
+    font-size: 0.93em;
     color: var(--text);
+    background: var(--light-bg);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 4px 4px 0;
+    line-height: 1.7;
 }
 
 .contact-info {
